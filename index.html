@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Cerita Pendek Ailavon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+       .karya {
+            text-align: left;
+        }
+
+        .hidden {
+            display: none;
+        }
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input {
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="intro" class="container">
+    <h1>Selamat Datang di 10 Cerita Pendek Ailavon!</h1>
+    <p>Cerita ini didedikasikan untuk seseorang yang sangat aku cinta, seseorang yang kehadirannya telah mengubah banyak hal dalam hidupku. Setiap kata yang tertulis di dalamnya adalah refleksi dari perasaan yang pernah ada, kisah yang telah kita jalani, dan kenangan yang akan selalu tersimpan dalam hatiku.</p>
+    <p>Terima kasih juga untuk Rafadel Bramanta Arianto, yang tanpa disadari telah menjadi Muse terbesarku dalam menyelesaikan cerita pendek ini. Setiap momen bersamamu, setiap tawa, setiap percakapan larut malam, semuanya mengalir ke dalam tulisan ini. Mungkin ini adalah caraku mengabadikan perasaan yang tak bisa terucapkan.</p>
+    <p>Semoga kamu menikmati keseluruhan cerita pendek ini, dan semoga kamu tahu betapa berharganya kamu di dalam setiap halaman yang telah aku tulis.</p>
+    <button onclick="startStory()">Mulai Baca</button>
+</div>
+
+<div id="storyContainer" class="container hidden">
+    <h2 id="storyTitle"></h2>
+    <p id="storyContent" class="karya"></p>
+    <div id="passwordSection">
+        <p id="storyClue"></p>
+        <input type="text" id="passwordInput" placeholder="Masukkan password">
+        <button onclick="checkPassword()">Buka Cerita</button>
+    </div>
+    <button id="nextButton" class="hidden" onclick="nextStory()">Lanjut</button>
+</div>
+
+<div id="finalStory" class="container hidden">
+    <h2>Pertanda Merah</h2>
+    <p class="karya">Cerita ini hanya bisa dibaca pada tanggal 1-10 April. Silahkan meminta link website terbaru untuk cerita terakhir pada tanggal tertera. Terimakasih telah membaca seluruh Cerita Pendek ini.</p>
+    <p class="karya">Thank you for being My Biggest Muse for My Short Story.</p>
+    <p class="karya">You're my Muse<br>My Love<br>My Everything</p>
+    <button onclick="showBirthdayMessage()">Lanjut</button>
+</div>
+
+<div id="birthdayMessage" class="container hidden">
+    <h2>Surat Ulang Tahun</h2>
+    <p class="karya">` <p><strong>Selamat ulang tahun Rafadel!</strong></p>
+   <p>Hari ini, di hari yang seharusnya penuh dengan kebahagiaan, aku ingin mengirimkanmu ucapan yang tulus dari lubuk hatiku. Aku harap, di hari spesial ini, kamu dikelilingi oleh orang-orang yang menyayangimu, dan kamu mendapatkan semua kebahagiaan yang kamu impikan.</p>
+    
+    <p>Jika kamu sudah sampai membaca Pesan ini, maka seharusnya kamu sudah selesai membaca seluruh cerita pendek yang aku dedikasikan kepada dirimu. Sang Muse. Sang Inspirasi dari cerpen-cerpen itu. Seandainya kita masih bersama, mungkin sekarang kita lagi duduk berdua. Aku akan bertanya padamu tentang cerpen mana yang membuatmu tersentuh, lalu kamu akan memelukku segera setelah membacanya. Aku tahu itu akan terjadi, jika, seandainya.</p>
+
+    <p> Sebenarnya aku menulis surat ini sudah dari seminggu yang lalu. Tetapi ada satu kejadian yang seharusnya tak terjadi membuat aku berpikir untuk merevisi pesan ini. Aku menulis ini setelah pulang dari cafe, 17 Maret, malam setelah pulang taraweh. Aku tahu kamu datang kemarin. Aku sangat sangat terkejut sampai aku ketakutan. Kau tak salah baca, aku takut melihatmu. Sehingga aku membawa masuk barang barangku sebelum berangkat taraweh dengan kondisi jantungku yang berdegup kencang seolah semuanya terasa masih mustahil. Apa yang harus aku katakan padamu? Aku tidak pernah membayangkan berada diposisi ini? Aku membayangkan pesan sebelum malam ini aku revisi dengan situasi kita tidak pernah bertemu. Tetapi secara tiba-tiba kamu datang... Merobek semua bayanganku. Kamu selalu mengejutkanku, sejak awal kau memberikanku novel dihari ulang tahunku, sampai malam ini, kau benar-benar Mr.Surprisingly.</p>
+
+    <p>Untuk menangkan jantungku...juga hatiku yang masih kacau--aku 'pura-pura' tak melihatmu. Kamu tentu sadar aku seperti menghindarimu dan itu dibuat buat bukan sengaja. Dibuat karena aku bingung harus bertemu dan mengucapkan apa. Berdosa aku selama ibadah aku tidak bisa fokus karena degup jantungku terus berpacu. Pikiranku kepadamu, membayangkan, menerka apa yang akan terjadi. Aku tidak bisa bertemu, aku tidak tahu harus menyapa bagaimana, 'Rafa, aku kangen...' atau 'Kenapa kamu lama sekali mendatangiku?' atau 'Rafa, apa kamu masih mencintaiku?' atau bisa saja aku menangis lalu memelukmu tanpa bicara. Aku benar-benar kalut. Tetapi disisi lain aku sadar aku tidak bisa seperti itu, karena teringat mama. Mama mengatakan bahwa aku harus kuat, aku tidak boleh mengemis, harus memikirkan diriku sendiri. Yang faktanya, seandainya, seandainya aku tidak wajib memikirkan diriku, aku bisa saja menangis dan memelukmu tanpa aba-aba.</p>
+
+    <p>Berbicara tentang mama, diposisiku saat ini yang sedang mengetikan pesan untukmu, aku tidak tahu apa-apa, tadi mama juga terlihat diam tak berekspresi. Namun aku yakin dibalik sorot matanya aku tahu dia menyembunyikan sesuatu. Aku yakin saat beribadah, aku menebak dengan pasti bahwa mama menemuimu. Aku tidak tahu apa yang terjadi. Ini pukul 20.49 aku sama sekali tidak tahu. Aku langsung pulang setelah melihat mejamu kosong, padahal aku sempat merangkai beberapa bayangan seandainya kamu masih disana, menungguku, seperti yang aku lakukan selama ini. Aku punya beberapa rencana untuk menyapamu setelah pulang taraweh, seandainya kamu menunggu.</p>
+
+    <p>Jikapun hal yang aku tebak; mama bertemu denganmu benar... Aku membayangkan mama mungkin mengusirmu. Dia marah padamu, atau mungkin bukan marah, tetapi kecewa. Aku tidak bisa membayangkan bagaimana percakapannya... aku tidak bisa. Walaupun aku tahu apa yang bisa saja terjadi, aku tidak mau membayangkannya, aku tidak bisa melihatmu sedih. Aku tidak mau menyakitimu, bahkan hanya dibayangkan. Sakitmu adalah hal yang membuat aku lemah. Aku tidak bisa melihatmu sakit apalagi dari perkataan mama.</p>
+    
+    <p>Kalau benar mama mengatakan sesuatu, biar itu jadi pendapat mama. AKu punya pendapatku sendiri tentangmu. Aku masih mau kita balikan, aku mau kita sama-sama lagi, aku kangen diantar jemput sama kamu, aku suka setiap kamu puk-puk kepala aku, aku bersedia buat jadi rumahmu lagi, aku ga papa kita berantem terus pelukan lagi bahkan diulang 100 kali asalkan aku bisa peluk kamu lagi. Aku mau semuanya. Aku mau yakinin mama lagi, meski beliau bakal cap aku jadi anak paling keras kepala. Ini semua kehidupanku. Aku berhak memilih, seperti apa yang dilakukan mama saat memilih ayahku. Aku siap lapang dada seandainya kita menikah lalu berakhir bercerai, aku-aku menerima konsekoensinya. Karena aku ga bisa bayangin pria lain yang jadi suamiku. Aku cuman mau menikah sama orang yang kenal baik dan sangat buruku. Karena aku orang yang berani mengambil resiko. Itu semua bisa aku lakukan, jika kamu juga sama besar maunya denganku.</p>
+
+    <p>Misalkan bayanganku yang tadi tidak terjadi, dan kamu pergi sebelum menemuiku maka sepertinya aku salah menilai cintamu.</p>
+
+    <p>Selama ini, bahkan hampir dua bulan lebih, aku menunggumu tanpa informasi apapun. Tanpa diberikan kejelasan apapun, tanpa klue yang pasti bahwa kau akan menjelaskan semuanya, tanpa diberi batasan waktu kapan ketidak tahuanku akan berakhir. Aku tidak menerima konsep move on, aku masih menunggu, berpegang teguh dengan diriku sendiri bahwa kamu akan datang setidaknya sekali untuk menjelaskannya. Dan itu terjadi saat sehari setelah valentine. Semua rasa penasaranku terbayar. Aku berhasil menunggumu.</p>
+  
+    <p>Kemudian kamu menghilang lagi, tanpa ada kabar apapun. Menunggu kembali, seperti yang kamu bilang aku harus menahan diriku sendiri untuk melakukan 'first move', aku menjalankan semua pesan terakhirmu sebelum menghilang. Semuanya kecuali untuk mencari pasangan baru dan move on. Aku hidup dengan kebohongan setelah hari itu. Bilang pada dunia bahwa 'kita baik-baik saja'. Itu menyakitiku. Aku harus berbohong diriku, dan semua orang. Sampai disatu titik aku bertanya, "Aku melakukan ini semua karena aku tulus menunggumu, atau aku sedang melakukan tindakan bodoh?" Bisa saja kamu memang mau bermain. Datang saat rindu, lalu setelah terpenuhi kamu hilang seolah kita orang asing. Now, i've been on your backburner.</p>
+    
+    <p>Aku terperangkap disini. Tidak tahu caranya keluar.</p>
+    
+    <p>Pernahkah saat sendiri kamu memikirkanku? Merenungkan apa yang telah terjadi? Berpikir menemuiku untuk mencintaiku untuk terakhir kalinya? Aku sering sekali. Kadang menangis, berharap agar bisa bertemu denganmu sekali saja, untuk terakhir kalinya, mengobrol lalu berpelukan. Aku sangat ingin melakukannya. Jujur alasanmu terakhir kali dihari kamu kembali, aku.. tidak paham. Aku menahan diri untuk tidak menyudutkanmu. Mungkin karena aku merindukanmu, rindu kamu yang selalu menyambut bangunku dipagi hari, menjadi orang terakhir yang aku ingat saat tidur. Jadi aku menahan ucapanku.</p>
+    
+    <p>Merayakan ulang tahunmu tanpa kehadiranmu, terasa sangat aneh. Kenangan tentang kita, tentang tawa, canda, dan momen-momen indah yang pernah kita lalui bersama, kembali memenuhi pikiranku. Rasanya baru kemarin kita merayakan ulang tahunmu bersama. Ingat bagaimana aku membuatmu harus beliin aku takoyaki karena aku sebenarnya belum selesai menghias kartu ucapan untukmu. Aku tidak bermaksud merepotkanmu, tetapi aku ingin membuat kejutan, apalagi aksi kecup kecup merah itu harus dilakukan hati-hati agar tetap rapi dan bersih. Malam itu juga kita untuk pertama kalinya makan Taichan kan? Kamu mungkin lupa tapi aku masih menyimpannya. Semua tentangmu akan selalu melekat didalam diriku. Karena dirimu yang membuatku duduk mengetik semua cerita dan tulisan ini untukmu detik ini.</p>
+    
+    <p>Tiada yang tahu kalau hari saat kita terakhir bertemu adalah akhir dari semua hal yang kita perbuat.</p>
+    
+    <p>Kamu tahu? Aku selalu optimis kita nikah. Pergi ke Jogja lagi makan ketoprak sepiring berdua, buat konten TikTok yang sampai sekarang pun gak terealisasikan. Aku baru berpikir bahwa, ternyata semuanya sia-sia raf.</p>
+    
+    <p>Rumah yang mau kita buat itu tidak akan menjadi nyata. Sofa panjang, perpustakaan, dan ayunan di tamannya juga. Heeksa, Malena... hahaha cewek gila mana yang udah nyiapin nama anaknya yang bahkan belum lahir?</p>
+    
+    <p>Asalkan kamu tahu, bahkan aku sampai bikin tabungan khusus buat nikah. Aku cari part-time biar bisa nambahin tabungannya. Aku kan yang mau nikah di Bali, pasti butuh banyak biaya. Membayangkannya saja membuatku senang sekali, salting sendiri. Rasanya sangat dekat, seperti itu akan terjadi besok. Namun semua itu apa artinya jika beberapa jam lalu kamu nyatanya pergi tanpa mau menunggu lebih lama bukan karena mama.</p>
+    
+    <p>Setelah kita berpisah, aku menyadari betapa berartinya hadirmu di setiap langkah. Dulu aku tahu ini berat, tapi tak kusangka rasanya seperti ditampar kenyataan yang tak ramah. Ada kekosongan yang kini terasa begitu nyata, dan aku merindukanmu lebih dari yang bisa kuungkapkan dengan kata. Setiap sudut kota, setiap lagu yang pernah kita nyanyikan, setiap tempat yang kita kunjungi, semuanya kini hanya bayangan. Kadang aku menyumpahi diriku sendiri, menyesali masa lalu, kenapa dulu aku bertekad membawamu keliling kota, hanya untuk kini tenggelam dalam pilu. Aku tak tahu rasanya akan sesakit ini, seperti berjalan sendiri dalam sunyi tanpa akhir yang pasti.</p> 
+
+    <p>Aku tidak bisa melupakanmu begitu saja. Kenangan tentang kita akan selalu tersimpan di hatiku, sebagai bagian dari perjalanan hidupku.</p>
+
+    <p>Aku berharap, di hari ulang tahunmu yang ke 20 tahun ini, kamu bisa merasakan kebahagiaan yang sejati. Kebahagiaan yang tidak hanya datang dari hadiah atau perayaan, tetapi juga dari hati yang damai dan penuh syukur. Sebuah kebahagian yang bertahan sampai mati. Bukan dari aku yang nyatanya tak berhasil membuatmu bahagia lalu bertahan. Aku berharap, kamu dikelilingi oleh orang-orang yang mencintaimu apa adanya, dan kamu bisa meraih semua impianmu.</p>
+
+    <p>Aku tahu, jika memang kamu sudah menyeraah, aku mau tidak mau harus belajar melepaskanmu. Aku harus belajar menerima kenyataan bahwa kita berakhir seperti ini. Seperti yang kamu mau. Ini bukan hal yang mudah, tapi aku akan berusaha. Aku akan berusaha untuk merelakanmu, untuk membiarkanmu bahagia dengan jalanmu sendiri. Aku mengingatnya. Kamu mengatakannya dimalam sebelum kamu menghilang...</p>
+    
+    <p>Nov, <strong>kamu harus bisa hidup tanpa aku.</strong></p>
+    
+    <p>Itu adalah deklarasi perpisahan menyakitkan yang pernah aku dengar. Rasanya seperti jantungku turun dan ditabrak hawa panas dari depan. Dipukul realita bahwa kamu memang tidak benar-benar ingin melanjutkan hubungan ini ketahap serius. Walau, aku disini masih menyangkal penolakanmu.</p>
+    
+    <p>Jadi katakanlah padaku yang sejujurnya, apa kau masih mau memperjuangkan kita? Dan bagaimana cara melakukannya? Nyatanya cinta saja tidak cukup untuk menundukan dua pasangan. Nyatanya kata-kata saja tidak cukup untuk menyatukan dua pasangan. Nyatanya harapan saja tidak cukup untuk mewujudkan impian. Beritahu aku, apa yang harus kita lakukan. Karena pada akhirnya hanya ada dua pilihan, menikah atau tidak sama sekali. Sejak aku tahu aku jatuh cinta padamu aku tidak pernah bermain-main, aku tidak suka mengganti-ganti pasanganku, cukup satu lalu selamanya. Aku juga tidak yakin ada yang cocok dan bisa membuatku damai dalam menjalani hidup. Seseorang yang dapat menenangkanku dihari tua.</p>
+    
+    <p>Yakinkanlah aku agar aku bisa menerima semuanya.</p>
+    
+    <p>Yakinkan sekali lagi bahwa kita telah sampai diakhir cerita.</p>
+
+    <p>Sekali lagi selamat ulang tahun Rafadel, kamu sudah 20 tahun, kamu sudah cukup dewasa untuk menentukan jalan hidupmu sendiri.. Kamu sudah dewasa. Kamu pria dewasa yang dapat menentukan pilihanmu mulai detik ini. Karena ini adalah kehidupanmu.</p>
+
+    <p>Untuk sekarang aku akan selalu ada di sini, entah sampai kapan. Tapi, jika kamu merasa lebih baik tanpa kehadiranku, aku akan menghormati itu. Aku akan menjaga jarak, dan aku akan berusaha untuk tidak mengganggumu lagi.</p>
+
+    <p>Aku hanya ingin kamu tahu, bahwa meskipun kita tidak lagi bersama, aku akan selalu mendoakan yang terbaik untukmu. Aku akan selalu berharap kamu bahagia, sukses, dan dikelilingi oleh cinta. Selamat ulang tahun, semoga kamu mendapatkan semua yang kamu inginkan.</p>
+
+    <p>Aku masih mencintaimu.<br>Salam sayang,<br>mantan pacar yang baru sadar cintanya tak terbalas<br>Novalia.</p>
+
+    `
+    </p>
+    <button onclick="goToHome()">Selesai</button>
+</div>
+
+<script>
+const stories = [
+    { title: "Menjelang Senja Dihalaman Pertama", clue: "Tempat kencan pertama sebelum pacaran. 1 Kata:", password: "GRAMEDIA", 
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong> Sweet Disposition - The Temper Trap</p>
+            
+<p>Matahari sore perlahan tenggelam, menyisakan semburat jingga yang berpadu dengan biru tua. Angin membawa suara kendaraan yang berlalu-lalang di jalan raya depan sekolah. Di parkiran yang mulai lengang, hanya ada aku dan dia, berdiri dalam diam.</p>
+
+<p>Biasanya, rutinitas ini sederhana—menyalakan motor, menunggu dia naik, lalu mengantarnya pulang dengan celotehannya sebagai latar perjalanan.  Aku sudah terbiasa dengan itu, dengan suaranya yang mengalun ringan di antara deru kendaraan, dengan tatapan sampingannya yang sesekali mengarah padaku meski aku terlalu kaku untuk membalasnya lama-lama. Tetapi hari ini, sesuatu terasa berbeda.</p>
+
+<p>Dia tidak langsung naik seperti biasa. Sebaliknya, dia tetap berdiri, menatapku dengan sorot mata yang ragu, namun juga penuh keyakinan. Tangannya mencengkeram tali tasnya erat, seolah menimbang sesuatu. Aku hanya bisa diam menunggu.</p>
+
+<p>Lalu, dengan gerakan ringan, dia melangkah mendekat, cukup dekat hingga aroma samar dari parfumnya—manis dan lembut, seperti bunga yang baru mekar—terbawa angin menuju indra penciumanku. Jantungku berdegup lebih kencang, bukan karena terkejut, tapi karena kedekatan ini, kedekatan yang masih belum kupahami sepenuhnya.</p>
+
+<p>Dan kemudian, tiba-tiba, tangannya terangkat, menunjuk ke arah jalan besar yang terbentang di depan sekolah. Suaranya yang lembut mengatakan ingin pergi ke toko buku yang berada di pinggir jalan raya. Permintaan yang sederhana, tetapi cukup untuk menghentikan alur pikiranku sesaat.</p>
+
+<p>Aku bukan seseorang yang mengerti banyak soal perempuan. Aku kaku, pendiam, dan sering kali tidak tahu harus bersikap bagaimana saat berhadapan dengannya. Tetapi entah kenapa, melihat caranya menatapku—sorot mata yang memantulkan sisa cahaya sore, dengan senyum yang seolah berkata bahwa dia percaya padaku—aku merasa seolah tidak memiliki pilihan lain selain mengangguk.</p>
+
+<p>Tanpa perlu berkata apa pun aku mengambil helm cadangan yang selalu kusimpan untuknya, menyerah pada kenyataan bahwa sekali lagi aku menjadi tukang ojek pribadinya. Dan jujur saja, aku tidak keberatan. Jika itu berarti aku bisa merasakan keberadaannya lebih lama maka aku akan mengantarnya ke mana pun dia mau.</p>
+
+<p>Begitu kami memasuki toko buku, aroma kertas dan tinta segera menyergap inderaku. Pendingin ruangan membelai kulit, lampu-lampu memancarkan cahaya keemasan yang lembut. Lagu Sweet Disposition dari The Temper Trap mengalun pelan, menciptakan latar yang sempurna untuk pengalaman pertama ini—pengalaman pertamaku ke toko buku bersama seorang gadis.</p>
+
+<p>Dia berdiri di depanku, wajahnya bersinar lebih cerah dari biasanya. Senyum yang sering kulihat kini merekah, dipenuhi kebahagiaan murni. Pipinya merona seperti kelopak mawar, dan matanya berbinar saat menatap deretan buku yang tersusun rapi.</p>
+
+<p>Aku, di sisi lain, hanya berdiri beberapa langkah di belakangnya, merasa seperti pendatang yang tak tahu harus berbuat apa. Toko buku ini tak pernah spesial bagiku sebelumnya, hanya gedung besar berisi buku-buku berjejer. Tapi melihat caranya memandang dengan kekaguman yang nyaris seperti anak kecil di toko permen—membuatku berpikir mungkin ada sesuatu lebih dari sekadar kertas bertumpuk di sini.</p>
+
+<p>Dia bergerak, berjalan cepat menuju salah satu rak kemudian tangannya lincah menelusuri punggung buku. Aku mengikutinya dalam diam, mendengar langkah kaki kami berbaur dengan alunan musik.</p>
+
+<p>Lalu, dia mulai bercerita.</p>
+
+<p>Aku tahu dia bukan gadis pendiam, tapi ini pertama kalinya aku melihatnya begitu cerewet. Kata-katanya mengalir tanpa henti penuh gairah. Dia berbicara tentang buku-buku yang pernah dibacanya, premis yang menarik, karakter yang mengesankan. Sesekali dia menarik satu buku dari rak, menatap sampulnya sebelum menjelaskan kisahnya dengan suara penuh warna, seolah dia adalah narator dari dunia yang hanya bisa dia lihat.</p>
+
+<p>Aku tidak tahu banyak tentang buku, tapi aku tetap mendengarkan. Kata-katanya seperti aliran sungai yang jernih, deras, tetapi menenangkan. Aku menikmati melihat ekspresinya yang berubah-ubah—kadang penuh antusiasme, kadang berpikir keras, kadang mengerutkan alisnya seakan mengingat sesuatu yang penting. Dia begitu hidup di sini, di antara lautan cerita yang menunggu ditemukan.</p>
+
+<p>Aku hanya terus mengikutinya, membiarkan suaranya memenuhi ruang kosong di pikiranku, membiarkan dunia ini menjadi miliknya sementara aku berdiri sebagai saksi yang diam-diam menikmati setiap momennya.</p>
+
+<p>Sampai akhirnya, dia berhenti di salah satu rak dan mengeluarkan buku yang sejak tadi dia cari. Wajahnya semakin berseri, matanya berkilat penuh kepuasan. Dia membalik buku itu di tangannya, seolah ingin memastikan ini benar-benar yang dia inginkan.</p>
+
+<p>Aku memperhatikannya lebih lama dari seharusnya. Cara dia tersenyum pada buku itu, jemarinya yang menyusuri sampulnya dengan hati-hati—seakan buku itu sesuatu yang berharga, sesuatu yang membuatnya bahagia.</p>
+
+<p>Dan saat itu, sesuatu dalam diriku bergetar pelan, seperti halaman yang terbuka oleh hembusan angin.</p>
+
+<p>Aku tak pernah mengerti bagaimana orang bisa terikat pada kata-kata tercetak, bagaimana sebuah cerita bisa membuat seseorang begitu tenggelam. Tapi melihatnya di sini, di antara rak-rak buku yang membingkainya seperti adegan sempurna, aku mulai mengerti.</p>
+
+<p>Mungkin, selama ini, aku juga telah tenggelam. Tanpa sadar, tanpa pernah benar-benar membaca, aku membiarkan kisah ini tumbuh perlahan dalam diam.</p>
+
+<p>Dan kini,<br>aku takut jika lembaran berikutnya tak lagi memuat namaku di dalamnya.</p>
+        `},
+    { title: "Keheningan dalam Genggaman Bulan Januari", clue: "Benda yang sengaja kulupakan, berakhir meneduh. 2 Kata:", password: "JAS HUJAN",
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong> Labyrint - Taylor Swift</p>
+
+<p>Hujan bulan Januari turun dengan deras, menciptakan tirai air yang membasahi halaman sekolah. Aku duduk di bangku lorong kelas, sengaja tidak membawa jas hujan hari ini. Aku tidak terburu-buru pulang. Aku ingin menikmati momen ini lebih lama, duduk bersebelahan dengannya di sini, di bawah langit kelabu yang gemuruh. Udara dingin menyelinap melalui celah jendela yang terbuka, membawa serta aroma tanah basah yang khas. Hujan seperti ini selalu memberiku alasan untuk diam lebih lama di dekatnya, meskipun aku sendiri belum tahu alasan pastinya.</p>
+
+<p>Dia, seperti biasa, tenang dan diam, hanya sesekali menatap hujan tanpa ekspresi. Aku, sebaliknya, selalu punya banyak hal untuk dikatakan. Aku bisa bercerita tentang buku, tentang film yang kutonton semalam, atau bahkan tentang mimpi-mimpi aneh yang kuingat saat bangun pagi. Aku membiarkan kata-kata mengalir begitu saja, karena aku tahu dia mendengarkan. Aku tahu dari caranya mengangguk pelan, dari gumaman pendek yang mengonfirmasi bahwa dia ada di sini bersamaku, bahwa aku tidak berbicara sendirian.</p>
+
+<p>Suaranya selalu terasa menenangkan, seperti sihir yang mengalir di udara. Ada sesuatu di dalam nada bicaranya yang terasa melindungi, sesuatu yang membuatku ingin terus berbicara, terus bercerita, terus menunggu setiap gumaman kecil atau anggukan darinya. Kadang, kalau aku beruntung, aku bisa melihat senyumnya yang semakin membuatku tersipu. Aku tidak tahu kapan aku mulai memperhatikan hal-hal kecil seperti ini.</p>
+
+<p>Wajar bukan jika aku tersipu?<br>
+Aku akui dia sangat manis dan menawan. Aku bisa pastikan 8 dari 10 perempuan akan setuju jika mereka berada diposisiku—berteman dengan laki-laki pemilik senyum paling menawan seantero sekolah adalah masa terbaik untuk menikmatinya dari dekat.</p>
+
+<p> Aku terus bercerita sampai akhirnya jari-jariku mulai terasa dingin. Udara di lorong ini begitu menusuk setelah hujan semakin deras. Tanpa banyak berpikir, aku menyelipkan tanganku ke dalam saku jaketnya yang besar karena jaketku tak punya. Jadi aku melakukannya begitu saja tanpa ragu. Aku yakin dia tidak keberatan, hingga dia menoleh dan menatap mataku.</p>
+
+<p>"Dingin?" Ia bertanya dengan suara rendah, nyaris berbisik, namun aku menangkap jejak kekhawatiran di nadanya.</p>
+
+<p> Aku mengangguk kecil. Tetapi sebelum aku sempat melanjutkan kalimat, dia melakukan sesuatu yang membuatku membeku.</p>
+
+<p>Dia menggenggam tanganku dari luar saku jaket.</p>
+
+<p> Aku terdiam. Napasku menggantung, tubuhku enggan bergerak, mencoba memahami situasi ini. Seketika, suara hujan, gemuruh, dan bisikan angin meredup, menjauh dari kesadaranku. Yang tersisa hanya kehangatan yang merambat, membungkam pikiranku, seolah mematikan neuron-neuron di otakku.</p>
+
+<p> Aku menatapnya tanpa kata, berusaha mencari makna di balik tindakannya. Tangannya lebih besar dari tanganku, jemarinya hangat meski udara begitu dingin. Dia diam, menatap lurus ke depan, seolah ini bukan hal besar. Seolah dia tak sadar bahwa aku bahkan tak bisa berpikir jernih.</p>
+
+<p>Jantungku berdegup cepat. Haruskah aku menarik tanganku? Mengucapkan sesuatu? Tapi aku tak ingin melepaskannya. Aku tak ingin momen kecil ini berlalu begitu saja. Aku menunduk, menatap jemari kami yang bersentuhan di atas jaketnya. Baru kusadari betapa dekatnya kami, betapa kehangatan kecil ini berarti lebih dari sekadar mengusir dingin.</p>
+
+<p> Aku tidak tahu apa yang dia pikirkan saat ini, tetapi aku tahu apa yang aku rasakan. Ini bukan lagi tentang persahabatan atau kebiasaan. Ini bukan hanya karena dia lawan jenis atau karena aku terlalu akrab dengannya.</p>
+
+<p> Aku belum siap mengakuinya, bahkan kepada diriku sendiri. Tapi untuk saat ini, aku ingin waktu berhenti di sini. Aku ingin tetap di tempat ini, di lorong kelas yang dingin diiringi suara hujan sebagai pengisi kecanggunganku. Sederhana tetapi membuatku merasa begitu hidup.</p>
+
+<p> Aku menghela napas pelan, berharap dia tidak menyadarinya. Aku tidak ingin dia tahu bahwa aku mulai menyukai momen ini lebih dari yang seharusnya. Aku menoleh sedikit, mencuri pandang ke arahnya. Garis wajahnya tetap sama, tenang dan tak tergoyahkan.</p>
+
+<p> Hujan masih belum menunjukkan tanda-tanda akan reda. Aku mencoba mengalihkan pikiranku dengan kembali berbicara, kali ini lebih pelan, hampir seperti bisikan. Aku menceritakan sesuatu yang lebih lembut, lebih personal. Tentang bagaimana hujan selalu mengingatkanku pada masa kecilku, saat aku suka berlari-lari di bawahnya tanpa peduli akan basah kuyup. Dia hanya mendengarkan, tidak menyela, tidak berkomentar. Tetapi aku tahu dia benar-benar memperhatikan lewat tatapan matanya yang teduh.</p>
+
+<p> Aku tidak bisa menahan senyum. Aku bertanya-tanya, bagaimana mungkin seseorang yang begitu pendiam bisa membuatku merasa begitu nyaman? Bagaimana mungkin seseorang yang nyaris tidak pernah menunjukkan emosinya bisa membuatku ingin terus berada di dekatnya?</p>
+
+<p> Seiring waktu berlalu, genggamannya perlahan mengendur, tetapi dia tidak benar-benar melepaskan tanganku. Aku menggigit bibir, menahan diri untuk tidak mengatakan sesuatu yang mungkin akan merusak suasana. Aku ingin menikmati keheningan ini, menikmati setiap detik yang berjalan lambat, menikmati kebersamaan yang tanpa kata-kata tetapi terasa begitu bermakna.</p>
+
+<p> Aku tidak tahu apa yang akan terjadi setelah ini. Apakah besok aku akan kembali duduk di bangku lorong ini dan merasakan hal yang sama? Apakah dia akan mengingat momen ini seperti aku mengingatnya? Aku tidak tahu, dan mungkin aku tidak perlu tahu sekarang. Yang aku tahu, untuk saat ini, aku hanya ingin tetap di sini bersamanya.</p>
+
+<p> Hujan Januari mengguyur deras, menusuk kulit dengan dinginnya yang menggigit. Namun, genggaman tangannya adalah kehangatan yang tak bisa kutolak—perlahan menenggelamkanku dalam perasaan yang mungkin tak seharusnya ada. Perasaan yang, dengan segala keindahannya, mulai membuatku gila.</p>
+
+`},
+    { title: "Kencan Dan Pelukan Pertama", clue: "Dia mogok saat kencan kita. 1 Kata:", password: "AFGAN", 
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong> Cintaku - Chrisye</p>
+
+<p>Hari ini adalah hari yang kutunggu-tunggu sejak berminggu-minggu lalu. Kencan pertama dengan dia, gadis bermata cemerlang yang selama ini membuat hariku lebih berwarna. Aku ingin hari ini menjadi pengalaman yang tak terlupakan baginya. Sesuai rencana, aku mengajaknya ke dataran tinggi, ke kebun teh yang hijau membentang sejauh mata memandang. Aku ingin menunjukkan padanya pemandangan yang menakjubkan dan menciptakan kenangan yang indah.</p>
+
+<p>Ketika aku menjemputnya pagi ini, dia tersenyum cerah seperti matahari yang baru terbit. Mengenakan sweater rajut berwarna krem dan jeans berwarna biru muda, dia tampak begitu sederhana, tapi juga begitu menawan. Seolah semua yang ada di sekitarnya memudar, dan hanya ada dia dalam pandanganku.</p>
+
+<p>“Kita mau ke mana?” tanyanya dengan nada penasaran.</p>
+
+<p>“Ke tempat yang semoga kamu suka,” jawabku, mencoba terdengar santai meskipun dalam hati, aku gugup setengah mati.</p>
+
+<p>Sepanjang perjalanan, kami banyak berbincang. Dia adalah tipe orang yang selalu punya topik untuk dibicarakan, seolah dunianya penuh dengan hal-hal menarik yang ingin dia bagikan. Dan aku? Aku hanya ingin mendengarnya, ingin menikmati setiap ekspresi wajahnya saat bercerita. Tawa renyahnya memenuhi udara yang masih sejuk pagi itu.</p>
+
+<p>Setelah hampir satu jam perjalanan, kami akhirnya tiba di kebun teh yang luas. Udara segar langsung menyambut kami, disertai aroma khas daun teh yang menenangkan. Aku bisa melihat matanya berbinar saat melihat hamparan hijau yang terbentang di depan kami.</p>
+
+<p>“Ini cantik sekali!” serunya dengan penuh semangat.</p>
+
+<p>Kami berjalan di antara pohon teh, bercanda, dan berlarian kecil seperti anak-anak yang baru menemukan taman bermain baru. Di satu titik, dia menarik tanganku dan berkata, “Ayo, kita buat vlog mini! Aku ingin mengabadikan momen ini.”</p>
+
+<p>Aku mengangguk, meskipun aku tidak begitu terbiasa berada di depan kamera. Namun, melihat antusiasmenya, aku tak bisa menolak. Dia mulai merekam dengan ponselnya, menceritakan perjalanan kami sambil sesekali mengarahkan kamera ke wajahku. Aku tertawa melihat betapa serunya dia dalam melakukan ini.</p>
+
+<p>Setelah puas bermain di kebun teh, kami melanjutkan perjalanan ke sebuah kafe yang terletak di dataran tinggi. Kafe ini memiliki pemandangan kota yang sangat indah dari atas. Kami duduk di tepi balkon, menikmati makanan sambil melihat awan perlahan bergerak di atas kota yang mulai sibuk.</p>
+
+<p>“Terima kasih sudah mengajakku ke sini,” katanya sambil menyeruput kopinya.</p>
+
+<p>“Aku ingin kencan pertama kita spesial,” jawabku jujur.</p>
+
+<p>Dia tersenyum lembut, membuat hatiku semakin berdebar. Aku tak pernah merasa seperti ini sebelumnya. Ada sesuatu tentang dia yang membuat segala sesuatu terasa lebih cerah dan menyenangkan.</p>
+
+<p>Sore menjelang, hujan mulai turun. Kami terjebak di kafe itu, tapi anehnya, aku tidak merasa terganggu. Justru, ini memberi kami lebih banyak waktu untuk mengobrol dan tertawa bersama. Kami membahas segala hal, mulai dari film favorit, mimpi-mimpi di masa depan, hingga hal-hal kecil yang membuat kami bahagia.</p>
+
+<p>Ketika hujan akhirnya reda, kami memutuskan untuk pulang. Namun, di tengah perjalanan, motorku tiba-tiba mogok. Aku panik. Bukan hanya karena kendaraan ini bermasalah, tapi juga karena aku tidak ingin dia merasa tidak nyaman.</p>
+
+<p>“Yah, kenapa mogok sih?” gumamku sambil mencoba menghidupkan mesin berulang kali.</p>
+
+<p>Dia, yang duduk di belakangku, malah tertawa pelan. “Tenang aja, nggak usah panik. Kita cari bengkel aja.”</p>
+
+<p> Aku menghela napas panjang dan mengangguk. Kami mulai berjalan menuruni dataran tinggi, mencari bengkel yang masih buka. Aku merasa malu luar biasa, tapi dia tetap tersenyum, seolah ini bukan masalah besar sama sekali. Sesekali dia menggodaku, mencoba membuatku merasa lebih baik.</p>
+
+<p>Setelah beberapa saat, kami akhirnya menemukan bengkel kecil yang masih buka. Montirnya langsung menangani motorku, sementara kami duduk di bangku panjang menunggu.</p>
+
+<p>“Maaf ya, jadi pulang telat,” kataku sambil menunduk.</p>
+
+<p>Dia menoleh dan tersenyum. “Kamu minta maaf untuk sesuatu yang nggak bisa kamu kendalikan? Lucu banget.”</p>
+
+<p> Aku mendongak, sedikit bingung. “Tapi tetap aja, aku takut kamu jadi ilfeel.”</p>
+
+<p>Dia terkekeh dan menggeleng. “Kamu tahu? Ini adalah salah satu hari terbaik dalam hidupku. Aku benar-benar menikmati kencan pertama kita. Jadi, jangan khawatir.”</p>
+
+<p>Hatiku menghangat mendengar kata-katanya. Aku menatapnya, dan untuk pertama kalinya, aku merasa lebih tenang. Dia benar-benar tidak terganggu dengan kejadian ini, malah menganggapnya sebagai bagian dari petualangan hari ini.</p>
+
+<p>Ketika motor akhirnya selesai diperbaiki, kami kembali melanjutkan perjalanan pulang. Malam sudah semakin larut, udara terasa lebih dingin. Aku merasakan gerakan kecil di belakangku, dan sebelum aku menyadarinya, dia tiba-tiba memelukku erat.</p>
+
+<p>“Terima kasih untuk hari ini,” bisiknya di telingaku.</p>
+
+<p>Jantungku langsung berdegup kencang. Ini pertama kalinya aku dipeluk oleh seorang perempuan. Rasanya seperti ada listrik mengalir di tubuhku. Napasku terasa berat, seolah setiap hembusan membawa serta kegugupan yang semakin menjadi. Aku mencoba untuk tetap tenang, tapi rasanya mustahil. Aku hanya bisa mengelus tangannya yang melingkar di pinggangku dengan tangan kiriku. Bukannya menjauh, dia justru semakin mendekat, membuatku semakin gugup.</p>
+
+<p> Aku tidak bisa berkata-kata. Aku hanya bisa menikmati momen ini, merasakan kehangatan yang dia berikan. Tanpa sadar, aku tersenyum sangat lebar di balik kaca helmku. Aku melirik ke spion kiri, dan di sana kulihat dia bersandar pada punggungku, tersenyum lembut. Dadaku semakin sesak oleh perasaan yang tak bisa kugambarkan. Seketika pikiranku mulai berkhayal terlalu jauh—bagaimana kalau aku melamarnya besok? Atau mungkin langsung menikahinya minggu depan? Aku harus mulai menabung untuk cincin sekarang juga! Astaga, aku kenapa jadi mikir sejauh ini?! Rasanya aku ingin menjerit karena terlalu salting, tapi aku berusaha sekuat tenaga agar tetap terlihat santai. Aku mencoba menarik napas dalam-dalam, mencoba menenangkan diri, tapi percuma. Hangatnya pelukan ini sudah membuat otakku tidak berfungsi dengan benar. Rasanya seperti aku baru saja memenangkan lotre terbesar dalam hidupku.</p>
+
+<p> Aku mengeratkan genggaman di setang motor, berusaha tetap fokus pada jalan, tapi senyumku tak juga luntur. Aku ingin mengabadikan momen ini selamanya, ingin terus merasakan debaran ini setiap kali bersamanya.</p>
+
+<p>Jika kencan pertama saja bisa seindah ini, bagaimana dengan hari-hari selanjutnya? Jika hari ini aku merasa begitu beruntung memilikinya di belakangku, bagaimana jika suatu hari nanti dia benar-benar menjadi milikku selamanya?</p>
+
+<p> Aku tidak tahu apa yang akan terjadi di masa depan, tapi satu hal yang pasti—aku ingin terus merasakan perasaan ini, lagi dan lagi, bersamanya.</p>
+
+`},
+    { title: "Di Depan Pintu Kau Mengikis Keraguan", clue: "Aku akan mencium rasa ketidak percayaan dirimu. 4 Kata:", password: "I'LL KISS YOUR INSECURITY", 
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong> Sempurna – Andra and The Backbone</p>
+
+<p>Aku menatap bayanganku di layar ponsel, jari-jariku dengan gelisah menyentuh pipi, lalu turun ke dagu, dan akhirnya ke leher. Rasanya, setiap sudut dari tubuhku penuh dengan kekurangan yang seakan berteriak agar aku menyadarinya. Aku menarik napas panjang, mencoba mengusir pikiran itu, tapi ia terlalu kuat menancapkan akarnya. Selama ini, aku selalu membandingkan diriku dengan para wanita di media sosial—kulit mereka begitu halus, tubuh mereka begitu ideal, rambut mereka berkilau sempurna. Sedangkan aku?...</p>
+
+<p>Aku tak sadar bahwa sejak tadi pacarku sedang menatapku. Dia memang tahu betul bagaimana aku saat merasa tidak baik. Dia yang paling pengertian untuk bertanya "Kamu kenapa?"</p>
+
+<p>Aku menunduk, berpura-pura sibuk mengamati kuku-kukuku yang memang sudah panjang dan terlihat sedikit kotor. Aku cukup terkejut. Aku sendiri tak ingat kapan terakhir kali aku benar-benar memperhatikan hal kecil semacam ini. Sejak kapan aku lupa merawat diri? Aku menghela napas pelan, lalu beranjak dari sofa. "Aku mau ambil gunting kuku dulu," gumamku, lebih kepada diri sendiri daripada kepadanya.</p>
+
+<p>Saat aku kembali, dia menatap benda kecil di tanganku dan tersenyum kecil. "Mau aku bantu?"</p>
+
+<p> Aku menoleh dengan alis berkerut. "Hah?"</p>
+
+<p>"Aku potongin kukumu."</p>
+
+<p> Aku tertawa kecil, meski tanpa semangat. "Nggak usah, aku bisa sendiri."</p>
+
+<p>Tapi dia sudah menarik tanganku dengan lembut dan membawaku duduk di lantai, tepat di depan pintu. Matanya menatapku dalam, seolah ingin meyakinkanku bahwa tak ada yang aneh dari semua ini. Aku membuka mulut untuk protes, tapi dia sudah menggenggam tanganku dengan mantap dan mulai memotong kuku-kuku yang kusam itu dengan penuh kehati-hatian.</p>
+
+<p>Awalnya aku hanya diam, membiarkan dia melakukan apa yang ingin dia lakukan. Tapi semakin lama, semakin hangat rasanya. Pemandangan saat dia menunduk fokus memotong kuku dengan teliti berhasil membuatku tersenyum. Aku mengamatinya, aku mulai terkesima dengan lekukan pada wajahnya yang tegas, bibirnya, serta alisnya yang tebal. Pacarku tampan sekali.</p>
+
+<p>Namun perasaan yang seharusnya sederhana ini justru membuat dadaku sesak. Selain tampan dia begitu baik, begitu lembut, dan aku tidak bisa memahami kenapa seseorang seperti dia mau bersama seseorang seperti aku.</p>
+
+<p>"Kenapa kamu diem aja hari ini?" tanyanya akhirnya.</p>
+
+<p> Aku menggigit bibir, mencoba menghindari topik ini. "Nggak apa-apa."</p>
+
+<p> Dia berhenti sejenak, lalu mengangkat wajahnya untuk menatapku. "Kamu pikir aku bakal percaya itu?"</p>
+
+<p> Aku menatap matanya yang penuh dengan kesabaran, dan tiba-tiba, semuanya terasa terlalu berat untuk dipendam. "Aku cuma... merasa nggak cukup baik. Aku nggak secantik cewek-cewek di media sosial. Kadang aku ngerasa nggak pantas buat kamu."</p>
+
+<p> Dia mengernyit. "Nggak pantas buat aku?"</p>
+
+<p> Aku mengangguk pelan. "Lihat aku. Badanku nggak ideal, kulitku nggak mulus, rambutku berantakan, kukuku bahkan kotor. Aku nggak tahu kenapa kamu masih mau sama aku."</p>
+
+<p> Dia menatapku lama, seolah memikirkan sesuatu. Lalu, dengan nada yang begitu tenang, dia berkata, "Kamu sadar nggak sih, kamu ngomongin orang yang aku suka dengan cara yang begitu menyakitkan?"</p>
+
+<p> Aku terdiam.</p>
+
+<p> "Kamu lihat cewek-cewek di media sosial dan merasa mereka lebih cantik? Oke. Tapi yang aku lihat adalah seseorang yang lebih dari sekadar cantik. Kamu cerdas, kamu punya prinsip, kamu bisa bikin aku ketawa di saat terburuk. Kamu bahkan punya cara sendiri untuk menunjukkan perhatian ke orang lain tanpa mereka sadar. Dan aku lebih memilih itu dibanding seseorang yang hanya cantik di depan kamera."</p>
+
+<p> Aku menggigit bibir, menolak menyerah begitu saja. "Tapi aku nggak... secantik itu. Aku tahu aku bukan tipe yang—"</p>
+
+<p> "Tell me," potongnya, nadanya sedikit menantang. "Bagian tubuh mana yang kamu bilang jelek?"</p>
+
+<p> Aku menatapnya bingung. "Apa?"</p>
+
+<p> "Coba sebutin."</p>
+
+<p> Aku ragu-ragu. "Hidungku... nggak mancung, terus—"</p>
+
+<p>Sebelum aku bisa memproses apa yang terjadi, dia tiba-tiba mendekat dan mencium hidungku dengan lembut. Mataku membelalak, jantungku seolah berhenti berdetak sejenak.</p>
+
+<p>Dia menatapku dengan tatapan hangat yang hampir membuatku menangis. "Tell me again, which part? I'll kiss your insecurity."</p>
+
+<p>Pipiku langsung memanas. Aku buru-buru menarik tubuhku ke belakang, menjauh darinya. "Gila kamu!"</p>
+
+<p>Dia hanya terkekeh pelan, seolah menikmati reaksiku. Tapi kemudian, dia menarik tanganku kembali dan dengan tenang memotong kuku terakhir di jari-jariku. Setelah itu, dia mengecup punggung tanganku dengan lembut.</p>
+
+<p>"Kamu itu cantik." bisiknya.</p>
+
+<p> Aku menunduk, menggigit bibir untuk menahan senyum yang mulai terbentuk. Tatapannya begitu lembut, begitu penuh ketulusan yang nyaris membuatku percaya bahwa mungkin, hanya mungkin, aku benar-benar cantik di matanya.</p>
+
+<p>"Jadi?" tanyanya dengan nada menggoda. "Apa ada bagian lain yang kamu nggak suka?"</p>
+
+<p> Aku menggeleng cepat, pipiku masih terasa panas. "Nggak ada!"</p>
+
+<p>Dia tertawa kecil, lalu menarikku ke dalam pelukan hangatnya. "Bagus," bisiknya di atas kepalaku. "Karena aku juga nggak akan berhenti sampai kamu percaya."</p>
+
+`},
+    { title: "Titik Nol Sebelum Minus Seratus", clue: "Tempat, saat aku menjebakmu. 1 Kata:", password: "JOGLO", 
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong> I Like U – NIKI</p>
+
+<p>Aku menyesap udara sore yang menguar dari celah jendela kelas, mataku menatap kosong ke arah langit yang perlahan berubah warna. Sekolah baru, lingkungan baru, dan sekarang aku harus memilih ekstrakurikuler yang akan menemaniku selama tiga tahun ke depan.</p>
+
+<p>Tanpa banyak berpikir, aku memilih sinematografi. Dunia yang dipenuhi cahaya dan bayangan, kisah-kisah yang hidup dalam bingkai-bingkai bergerak. Aku suka film, bukan hanya sebagai hiburan, tapi sebagai jendela ke dalam dunia yang berbeda, sebuah medium untuk menangkap perasaan yang terkadang sulit diungkapkan dengan kata-kata. Aku ingin menciptakan sesuatu, membiarkan cerita-cerita dalam kepalaku menjelma nyata, menjangkau hati orang lain.</p>
+
+<p>Namun, entah bagaimana, langkah kakiku justru membawaku ke perpustakaan. Seperti ada tarikan tak terlihat yang mengarahkanku ke sana. Aku tenggelam dalam lembaran buku yang kuhimpun dalam dekapan, jari-jariku menyusuri huruf-huruf yang berbaris rapi. Halaman demi halaman berputar seperti reel film yang memutar adegan tanpa suara. Waktu berlalu tanpa ampun, dan aku baru sadar ketika cahaya senja mulai mengintip dari balik jendela.</p>
+
+<p>Saat akhirnya aku sadar, aku buru-buru berlari ke ruang ekskul yang sudah pasti dipenuhi anggota baru. Aku terlambat. Napasku masih tersengal saat aku mendorong pintu ruang sinematografi dan masuk tanpa ragu. Aku tidak mau kelihatan canggung, jadi aku hanya tersenyum dan segera duduk di kursi kosong yang tersisa. Semua orang sedang memperkenalkan diri. Aku menyesal telat, tapi bukan itu yang mengganggu pikiranku saat ini.</p>
+
+<p>Sejak aku melangkah masuk, mataku langsung terkunci pada seseorang di ujung ruangan.</p>
+
+<p>Laki-laki itu.</p>
+
+<p>Bertubuh tegap dengan kulit sawo matang yang seolah menyerap hangatnya mentari sore. Alisnya tebal, melengkung tegas di atas mata teduh yang tampak penuh perhatian, seperti seseorang yang menangkap lebih dari sekadar apa yang terlihat. Hidungnya mancung, dan bibirnya tebal—sepasang garis yang sesekali melengkung dalam senyum samar. Tapi bukan sembarang senyum. Itu adalah senyum yang tak terburu-buru, senyum yang datang seperti embusan angin di tengah musim kemarau—sejuk, jarang, dan membuat siapa pun ingin melihatnya sekali lagi.</p>
+
+<p>Aku bahkan tak sadar telah menatapnya terlalu lama sampai dia berdiri dari tempat duduknya untuk memperkenalkan diri. Jantungku berdebar ketika suaranya memenuhi ruangan. Suara yang dalam dan stabil, seperti seseorang yang tahu betul apa yang ia inginkan dalam hidup.</p>
+
+<p>"Aku jatuh cinta dengan sinema karena aku selalu membayangkan semua yang kulihat bisa menjadi rekaman dalam kepalaku. Aku ingin menangkap perasaan, momen, dan cerita dalam setiap frame."</p>
+
+<p>Aku tertegun. Lalu aku mendengarnya menyebut sebuah film yang membuatnya jatuh cinta dengan dunia film sejak kecil. How to Train Your Dragon.</p>
+
+<p>Aku terkekeh kecil tanpa sadar.</p>
+
+<p>Semua kepala menoleh ke arahku.</p>
+
+<p>Seorang kakak tingkat mengernyit. "Kenapa kamu ketawa?"</p>
+
+<p>Aku membeku. Aku nggak bermaksud mengganggu, tapi… serius? Seorang cowok dengan perawakan setegap itu suka film animasi seperti itu? Bukannya dia tipe yang suka film-film berat penuh teori? Aku buru-buru memutar otak mencari jawaban.</p>
+
+<p>"Maaf, aku cuma terkejut. Aku kira kamu tipe yang suka film-film serius, mungkin sutradara seperti Christopher Nolan." Aku berusaha terdengar setenang mungkin.</p>
+
+<p>Dia menatapku dengan ekspresi datar. "Kenapa memangnya kalau suka film kartun?"</p>
+
+<p>Aku menggeleng pelan. "Nggak kenapa-kenapa." Aku menjeda. "Kamu manis aja."</p>
+
+<p>Ada yang tertawa kecil di ruangan, tapi aku tidak terlalu peduli. Aku melihatnya menaikkan alis sedikit, lalu kembali duduk dengan gerakan santai, seolah tak terlalu terusik. Namun, aku menangkap sesuatu di matanya—rasa penasaran yang tersembunyi di balik ekspresi datarnya.</p>
+
+<p>Sebelum aku bisa mencerna lebih jauh, seorang kakak tingkat menoleh ke arahku dan bertanya, "Kalau kamu, suka film apa?" Suaranya terdengar ringan, tetapi cukup untuk menarik perhatian semua orang kembali padaku. Aku menghela napas sejenak, mencoba mengumpulkan pikiranku yang masih teralihkan oleh tatapan laki-laki di ujung ruangan itu.</p>
+
+<p>Aku mengalihkan pandangan dari laki-laki itu dan menjawab, "Aku suka film romance seperti Pride and Prejudice, atau film misteri klasik seperti 12 Angry Men. Tapi ada satu film yang benar-benar membuatku ingin tahu lebih banyak tentang dunia sinema." Aku berhenti sejenak. "Eternal Sunshine of the Spotless Mind."</p>
+
+<p>Beberapa orang mulai mengangguk, menunjukkan ketertarikan mereka. Aku melanjutkan, "Aku selalu terkesima dengan ide film itu. Bagaimana ia menyampaikan pesan tentang ingatan, kehilangan, dan cinta dengan cara yang unik dan menyentuh."</p>
+
+<p>Aku tersenyum kecil dan menyarankan semua orang untuk menonton film itu. Tapi jujur saja, aku hanya ingin tahu satu hal. Apakah laki-laki itu juga mendengarku?</p>
+
+<p>Aku melirik ke arahnya, mencoba menangkap ekspresinya di antara percakapan yang masih berlangsung. Dan saat itu juga, aku menangkap basah dirinya—dia sedang menatapku. Mata kami bertemu sesaat, dan ada sesuatu yang aneh di dalam diriku, seperti gelombang kecil yang bergulung pelan di lautan hati. Aku menahan tawa dalam hati, menyadari bahwa aku baru saja membuka pintu ke dunia baru yang belum pernah kurasakan sebelumnya.</p>
+
+<p>Aku berpura-pura kembali fokus pada diskusi yang masih berlangsung, tetapi pikiranku sudah melayang entah ke mana. Aku bertanya-tanya, apa dia juga sedang berpikir tentangku? Apa dia juga mulai menaruh rasa ingin tahu seperti yang aku rasakan terhadapnya?</p>
+
+<p>Tiba-tiba, seorang kakak tingkat kembali mengambil alih pembicaraan, membawa diskusi ke arah lain. Aku ikut mengangguk dan tersenyum, mencoba untuk tetap terlibat. Namun, di ujung sana, aku bisa merasakan tatapan laki-laki itu masih ada, seolah membentuk benang merah tipis yang menghubungkan kami di tengah ruangan yang penuh dengan percakapan ini.</p>
+
+<p>Aku melirik ke arahnya. Dan saat itu juga, aku menangkap basah dirinya—dia sedang menatapku.</p>
+
+<p>Aku menahan tawa dalam hati. Tatapan kami yang saling tertangkap tadi masih terngiang dalam benakku. Apakah dia juga penasaran tentangku? Atau hanya kebetulan saja? Aku mulai menebak-nebak sifatnya—apakah dia tipe yang pendiam, hanya berbicara jika perlu? Ataukah dia seseorang yang hanya terlihat tenang di luar, tetapi penuh cerita di dalam kepalanya?</p>
+
+<p>Aku mencoba mengingat ekspresinya sepanjang pertemuan tadi. Ada saat-saat dia tampak begitu fokus, mendengarkan dengan serius, dan ada saat-saat di mana sudut bibirnya naik sedikit ketika seseorang melontarkan candaan. Sial. Manis sekali!</p>
+
+<p>Aku menatap tanganku sendiri, menyadari bahwa aku telah menggigit bibir bawahku tanpa sadar. Kenapa aku tiba-tiba ingin tahu banyak tentangnya? Apa dia juga merasa ada sesuatu yang menarik dariku? Ataukah ini hanya imajinasiku yang terlalu liar? Aku menghela napas pelan.</p>
+
+<p>Sepertinya, aku jatuh hati.</p>
+
+`},
+    { title: "Sandaran untuk Gadis Pemenang Kontes", clue: "Judul Lagu dari Send the song pertama untukmu. 1 Kata:", password: "DAYLIGHT", 
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong> Arthics Monkey - No. 1 Party Anthem</p>
+
+<p>Aku tidak pernah benar-benar menyukai pesta. Hiruk-pikuk suara musik yang menggema di seantero ruangan, percakapan riuh yang tumpang tindih, serta lampu warna-warni yang berputar seperti tak kenal lelah. Jika bukan karena alasan tertentu, aku pasti lebih memilih duduk di sudut ruangan, menyesap jus apel yang telah berkali-kali kehilangan esnya, menunggu acara ini berakhir dan segera pulang.</p>
+
+<p>Tapi malam ini berbeda.</p>
+
+<p>Di antara kilauan lampu yang menyapu ballroom hotel, di antara gemuruh musik dan gelak tawa, aku melihatnya. Gadis dengan gaun navy berkilau yang tampak begitu serasi dengan cahaya yang menyorotnya. Dia menari tanpa beban, tertawa lepas bersama teman-temannya, seolah dunia hanya berputar di sekelilingnya. Entah sejak kapan aku berdiri di antara kerumunan, ikut menari, ikut tertawa, seolah-olah aku adalah bagian dari kegembiraan itu. Padahal, satu-satunya alasan aku ada di sini, satu-satunya alasan aku berbaur di tengah orang-orang yang biasanya hanya sekadar latar dalam hidupku, adalah dia.</p>
+
+<p>Sesekali, dia melirik ke arahku, lalu tertawa kecil, seolah menantangku untuk bergerak lebih lepas. Aku tersenyum, mengikuti ritme, membiarkan gelombang energi ini membawaku lebih jauh. Namun, tak bisa kupungkiri, setiap kali seseorang datang dan mengucapkan selamat kepadanya, aku merasakan sengatan cemburu yang halus. Mereka memujinya, mengaguminya, dan aku hanya bisa diam, menyaksikan dari kejauhan.</p>
+
+<p>“Apa aku terlihat sangat cantik sampai kau hanya bisa diam menatapku begitu?” suaranya membuyarkan lamunanku. Aku menoleh, menatapnya yang kini berdiri tepat di depanku, wajahnya masih menyimpan senyum cerah.</p>
+
+<p>“Kau selalu cantik. Tapi malam ini, aura pemenang Ratu Pestamu sangat kuat.”</p>
+
+<p>Dia mendengus pelan, menyikut lenganku dengan ekspresi pura-pura masam. “Jangan konyol.”</p>
+
+<p> Aku hanya tersenyum. Lalu kami berdua saling memandangi satu sama lain, larut dalam suasana dan kedekatan intens ini... Saat itulah, MC bersuara merusak momen kami. Sang MC berbicara dari atas panggung dengan pembawaannya yang luar biasa meriah dan 'sok-akrab'. Dia mantan ketua OSIS angkatan kami. Dengan suka cita menjelaskan bahwa acara inti segera tiba. Semua orang terdiam, menunggu pengumuman siapa penyambet gelar Prom Queen yang telah mereka nanti-nantikan sepanjang malam.</p>
+
+<p>“Dan kini, saat yang kita tunggu-tunggu. The Prom Queen of the year goes to...”</p>
+
+<p>Seisi ballroom dipenuhi dengan ketegangan. Nama-nama kandidat muncul di layar besar di belakang MC, dan setiap . Teman-temannya mulai berbisik riang, sementara dia sendiri hanya diam, menggigit bibir bawahnya dengan gugup.</p>
+
+<p>MC membuka kartu di tangannya, menarik napas, lalu mengucapkan satu nama,</p>
+
+<p>Dan itu adalah namanya.</p>
+
+<p>Teriakan bahagia langsung menggema. Gadis itu membelalakkan mata, seolah tak percaya, sebelum akhirnya didorong maju oleh sahabat-sahabatnya. Dia melangkah ke panggung dengan lampu sorot mengikuti setiap jejaknya. Ketika mahkota diletakkan di kepalanya, dan selempang bertuliskan ‘Prom Queen’ melingkari tubuhnya, aku melihatnya tersenyum. Senyum yang begitu lebar, begitu tulus, begitu indah.</p>
+
+<p> Aku ikut tersenyum. Ada kebanggaan yang menghangatkan dadaku, mengetahui bahwa dia berdiri di sana, menerima mahkotanya dengan begitu anggun. Aku tahu dia pantas mendapatkannya. Aku tahu, karena akulah yang memastikan dia mendapatkannya—dengan setiap lembar suara yang kutuliskan, dengan setiap harapan yang kutanamkan untuknya dalam diam.</p>
+
+<p>“Aku tidak percaya dia bisa menang,” gumam salah satu sahabatnya di sebelahku, masih ternganga.</p>
+
+<p> Aku hanya mengangkat bahu, menyembunyikan senyum kecil. “Aku menulis 150 kertas suara untuknya.”</p>
+
+<p>Ia menoleh cepat, matanya membesar. “Kau yang menulis setengah suara itu?”</p>
+
+<p> Aku menoleh. “Dan memasukkan namanya kedalam nominasi,” tambahku pelan. “Tapi jangan bilang siapa pun, terutama dia.”</p>
+
+<p>Sahabatnya masih menatapku dengan ekspresi tak percaya, sebelum akhirnya menggeleng-geleng dan menepuk pundakku dengan senyum lebar. “Kau gila.”</p>
+
+<p> Aku terkekeh, menatap sekeliling sebelum kembali menatap sosoknya yang masih berdiri di atas panggung dengan mahkota bertengger di kepalanya. Ya, mungkin aku memang gila. Gila karena diam-diam menuliskan 150 suara untuknya. Gila karena memasukkannya ke dalam daftar nominasi tanpa sepengetahuannya. Gila karena melakukan semua ini hanya demi melihat senyum itu—senyum yang selama ini menjadi matahariku.</p>
+
+<p> Tapi aku tak menyesal. Karena semua ini adalah untuknya. Untuk impiannya yang ingin menjadi ‘ratu semalam’, sesuatu yang mungkin baginya hanyalah angan-angan jauh di atas langit. Untuk permintaan maafku karena terlalu lama menahan perasaan ini, membiarkannya menggantung di antara kita tanpa kepastian. Untuk kebahagiaannya, yang selalu menjadi hal terpenting bagiku, bahkan lebih dari kebahagiaanku sendiri.</p>
+
+<p>Ketika dia turun dari podium, matanya berkilat bahagia. Sekilas, dia menatapku, lalu kembali sibuk menerima ucapan selamat dari teman-temannya. Lagu mulai diputar, menandakan dimulainya pesta dansa. Aku menarik napas dalam, merapikan dasi dan jasku, lalu berjalan tegap ke arahnya. Ketika aku sampai di depannya, aku mengulurkan tangan.</p>
+
+<p>“Sudah siap untuk dansa pertamamu, Ratu?”</p>
+
+<p>Dia menatap tanganku, lalu ke wajahku, dan tersenyum. “Tentu.”</p>
+
+<p>Tangannya yang hangat menyentuh telapak tanganku. Aku menuntunnya ke tengah ballroom, di mana pasangan-pasangan lain mulai berdansa dengan lembut. Aku meletakkan satu tanganku di pinggangnya, sementara tangannya bertumpu di bahuku. Musik mengalun lembut, dan kami mulai bergerak.</p>
+
+<p>“Aku tidak terlalu pandai berdansa,” bisikku.</p>
+
+<p>Dia tertawa. “Aku tahu.”</p>
+
+<p>Kami berdansa dengan perlahan, mengikuti irama musik. Aku menatap matanya yang berkilau di bawah cahaya lampu gantung. Aku ingin mengabadikan momen ini dalam ingatanku selamanya.</p>
+
+<p>“Selamat,” kataku akhirnya. “Kau sangat pantas mendapatkannya.”</p>
+
+<p>Dia tersenyum, lalu menatap sekeliling. “Aku tidak percaya semua ini nyata. Rasanya seperti mimpi. Tiba-tiba masuk nominasi Prom Queen, tiba-tiba menang nominasi? Maksudku, aku tidak se-hitz kandidat lainnya.”</p>
+
+<p>"Karena kamu tulus melakukan apapun. Jadi kamu tidak pernah memikirkan apa yang telah kamu tolong. Contohnya aku."</p>
+
+<p>"Kamu? "</p>
+
+<p>"Seandainya kamu ga seberani itu buat nunjukin keseriusan kamu, aku tidak punya harapan untuk kamu suka aku. Terimakasih sudah bertahan."</p>
+
+<p>"Aku yang berterimakasih sudah diberi kesempatan mengenal kamu sejauh ini. Tidak ada penyebab kenapa aku bisa jatuh cinta. Tetapi cukup bertemu denganmu, sudah berhasil membuat aku jatuh cinta. Sepenuhnya."</p>
+
+<p>Kami saling tersenyum seperti dua burung cinta yang tak bisa hidup sendirian. Aku rasa aku bisa gila jika kehilangannya. Dia alasanku untuk melakukan semua hal yang menurutku itu berlebihan. Namun jika itu adalah jalan satu-satunya mendapatkannya di dunia ini, maka aku akan selalu berlebihan untuknya.</p>
+
+<p> Aku mengamati ekspresinya yang penuh kebahagiaan, lalu bertanya, “Bagaimana perasaanmu malam ini?”</p>
+
+<p>Dia menghela napas, lalu tersenyum lebar. “Aku adalah wanita terbahagia malam ini... Hahaha”</p>
+
+<p>Ya Tuhan, tawanya saja membuatku rindu. Padahal kami saling berhadap-hadapan sekarang.</p>
+
+<p>"Kau tahu?” katanya pelan. “Kalau saja kau tidak menyatakan perasaanmu hari itu, mungkin kita hanya akan jadi dua manusia canggung di sudut ruangan, memendam perasaan yang tak akan pernah diketahui siapa pun.”</p>
+
+<p> Aku terkekeh. “Aku bersyukur sekarang kita berdansa.”</p>
+<p>Kami terus berdansa, membiarkan irama musik menuntun langkah-langkah kami tanpa sadar hingga ke sudut ballroom. Di sana, jauh dari sorotan lampu utama dan hiruk-pikuk para tamu lain, aku merasakan dunia seakan menyempit hanya untuk kami berdua. Napasnya semakin pelan, seolah selaras dengan melodi yang semakin mendayu. Aku bisa merasakan kehangatan tubuhnya begitu dekat, dan tiap gerakan kecilnya terasa begitu berarti. Sejenak, aku menutup mata, menikmati momen ini, mengukir setiap detailnya dalam ingatan, karena aku tahu, momen seperti ini tidak datang dua kali dalam hidup.</p>
+
+<p>“Jika kau lelah, kita bisa berhenti,” bisikku.</p>
+
+<p>Dia menggeleng. Lalu, tanpa peringatan, dia menyandarkan kepalanya ke dadaku.</p>
+
+<p> Aku membeku. Panas yang menjalar ke wajahku terasa semakin menjadi, seakan darahku bergejolak dalam ritme yang mengikuti detak jantungku yang semakin cepat. Aku bahkan bisa mendengarnya sendiri, begitu keras dan mendominasi di telingaku, seolah-olah seluruh ballroom telah sunyi dan hanya ada debaran itu.</p>
+
+<p>Aku tahu dia juga bisa mendengarnya, atau setidaknya merasakannya. Karena saat aku menatapnya, dia tersenyum kecil, ekspresinya penuh dengan kehangatan dan kelembutan. Seolah-olah dia menangkap basah perasaanku, seolah-olah dia memahami sepenuhnya apa yang ada dalam hatiku tanpa perlu aku mengatakannya. Tatapan matanya berbicara lebih dari ribuan kata, membuatku semakin tenggelam dalam perasaan yang sejak lama kusimpan dengan hati-hati. Di momen ini, aku tahu, tak ada lagi yang bisa kusembunyikan darinya.</p>
+
+<p>Kami terus berdansa dalam tempo lambat, membiarkan waktu berjalan dengan tenang, seolah ini adalah akhir dari cerita cinta yang sempurna.</p>
+
+`},
+    { title: "Kita, yang Selalu Kembali", clue: "Kamu Taman bermain. Aku adalah. 1 Kata:", password: "RUMAH", 
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong> New West- Those Eyes</p>
+
+<p>Aku tidak menyangka akan mendapatkan pesan seperti itu malam ini. Setelah seminggu yang begitu padat dengan kuliah dan organisasi, aku hanya ingin beristirahat sebentar sebelum kembali bergelut dengan tugas yang menumpuk. Tapi tiba-tiba, layar ponselku menyala, menampilkan namanya di layar. Pesan yang singkat, tapi cukup untuk membuat jantungku seolah berhenti berdetak sejenak.</p>
+
+<p>'Kita break dulu.'</p>
+
+<p>Aku menatap layar ponsel dengan mata melebar. Sejenak aku berpikir bahwa aku salah membaca pesan itu. Tapi setelah aku berkedip beberapa kali, huruf-huruf itu masih tetap di sana. Aku buru-buru duduk tegak, jari-jariku sedikit gemetar saat membalas pesannya.</p>
+
+<p>'Kenapa? Aku ada salah apa?'</p>
+
+<p>Dia hanya membalas dengan singkat, 'Kita butuh waktu.' Tak ada penjelasan lebih lanjut, tak ada kata-kata tambahan. Hanya dua kalimat itu yang terasa seperti hantaman di dadaku.</p>
+
+<p>Aku tidak bisa tinggal diam. Aku tahu aku harus menemuinya sekarang. Tanpa berpikir panjang, aku meraih jaket dan kunci motor, lalu bergegas keluar dari kamar. Dalam perjalanan, pikiranku berputar pada semua kejadian seminggu terakhir. Aku memang sangat sibuk, tugas kuliah dan proyek organisasi menelanku bulat-bulat. Aku hanya bisa menghubunginya sekadarnya—membalas seperlunya, mengucapkan selamat pagi dan selamat tidur tanpa banyak percakapan di antaranya. Mungkin aku terlalu abai. Mungkin aku terlalu tenggelam dalam duniaku sendiri.</p>
+
+<p>Saat sampai di depan rumahnya, aku menarik napas panjang, mencoba mengatur detak jantung yang berdebar cepat. Aku mengetuk pintu perlahan. Tak lama, pintu terbuka, dan di sana dia berdiri. Matanya merah, wajahnya masih basah dengan sisa air mata. Dadaku terasa sesak melihatnya seperti ini. Aku ingin merengkuhnya dalam pelukan, tapi dia hanya menatapku dengan ekspresi terluka.</p>
+
+<p>"Aku nggak ngerti kenapa kamu tiba-tiba bilang mau break," suaraku hampir bergetar, tapi aku berusaha tetap tenang.</p>
+
+<p>Dia tidak langsung menjawab. Hanya menghela napas panjang sebelum akhirnya berkata, "Aku capek. Aku ngerasa kayak ngomong sama tembok selama seminggu ini. Aku tahu kamu sibuk, tapi aku juga manusia. Aku butuh kamu." Suaranya pecah di akhir kalimatnya.</p>
+
+<p>Aku terdiam. Rasa bersalah menyelimuti dadaku. Aku paham sekarang. Aku yang salah. Aku yang mengabaikan perasaannya. Aku tidak pernah berniat membuatnya merasa sendirian, tapi tanpa sadar, aku telah melakukannya.</p>
+
+<p>Tanpa berpikir panjang, aku melangkah maju dan langsung memeluknya erat. Dia tersentak, mencoba mendorongku menjauh, tapi aku tidak peduli. Aku ingin dia tahu bahwa aku ada di sini, bahwa aku tidak akan membiarkannya pergi.</p>
+
+<p>"Aku minta maaf," bisikku di telinganya. "Aku benar-benar minta maaf. Aku nggak pernah bermaksud nyakitin kamu. Aku cuma terlalu bodoh buat sadar kalau aku udah bikin kamu merasa sendirian."</p>
+
+<p>Dia tidak langsung membalas pelukanku, tapi setelah beberapa saat, aku merasakan tubuhnya melemas dalam pelukanku. Isak tangisnya kembali pecah, dan aku hanya bisa mengelus punggungnya pelan, membiarkannya meluapkan semua yang dia rasakan.</p>
+
+<p>Setelah beberapa saat, aku menuntunnya duduk di sofa. Aku menghapus air matanya dengan ibu jariku, menatapnya penuh rasa bersalah. "Aku nggak akan ninggalin kamu tanpa kabar lagi. Aku janji. Aku bakal lebih perhatian, lebih ngerti kamu. Aku nggak mau kehilangan kamu."</p>
+
+<p>Dia mengangguk pelan, lalu menghela napas panjang. "Aku juga minta maaf... Aku nggak seharusnya langsung minta break tanpa kasih kamu kesempatan buat jelasin."</p>
+
+<p> Aku tersenyum kecil. "Nggak. Kamu nggak salah. Aku yang terlalu nggak peka."</p>
+
+<p>Kami terdiam sejenak. Aku meraih tangannya, menggenggamnya erat. Dia menatapku dengan mata yang masih basah, tapi kini ada kehangatan di sana. Perlahan, dia bersandar ke bahuku, dan aku merasakan detak jantungnya mulai stabil.</p>
+
+<p>"Kamu tahu? Aku belum pernah merasa ditinggalkan seperti ini sebelumnya," gumamnya pelan, suaranya sedikit bergetar, seolah mengandung ribuan emosi yang sulit diungkapkan. "Tapi entah kenapa, meskipun aku merasa sakit, aku juga merasa... kamu satu-satunya orang yang bikin aku percaya tentang masa depan. Kamu membuatku merasa tenang. Aku nggak bisa bayangin bagaimana hidup tanpamu, menua sendirian. Itu menakutkan."</p>
+
+<p>Hatiku terasa hangat mendengar kata-katanya. Aku mengecup keningnya lembut sebelum menjawab, "Aku juga. Aku nggak pernah kepikiran soal masa depan sebelumnya, tapi setelah ada kamu... aku mulai bisa bayangin hidup yang jauh lebih indah." Aku tersenyum, lalu menambahkan, "Aku mau kita punya rumah bersama nanti. Aku mau kamu punya perpustakaan pribadi, seperti yang selalu kamu impikan."</p>
+
+<p>Dia menoleh ke arahku dengan mata berbinar. "Jangan lupa ayunan di teras."</p>
+
+<p>Aku terkekeh. "Dan sofa panjang di ruang tamu, supaya kita bisa ketiduran sambil nonton TV."</p>
+
+<p>Dia tertawa pelan, dan aku merasa dunia ini menjadi lebih ringan. Tawanya seperti angin sejuk yang menenangkan di tengah hari yang terik. Setiap kali melihatnya tersenyum, aku merasa segala beban yang menumpuk di pundakku seakan luruh begitu saja. Aku ingin selalu melihat tawanya seperti ini. Aku ingin selalu ada untuknya, memastikan dia tidak pernah merasa sendirian atau diabaikan lagi.</p>
+
+<p>Aku menatapnya lekat-lekat, menyadari betapa dalam perasaanku padanya. Dia adalah orang pertama yang membuatku ingin merancang masa depan dengan seseorang. Dulu, aku tidak pernah memikirkan apa yang ada di depan, hidup hanya tentang hari ini dan tugas-tugas yang harus kuselesaikan. Tapi sejak dia hadir, aku mulai membayangkan sebuah rumah kecil yang nyaman, dengan perpustakaan pribadinya, ayunan di teras tempat kami bisa menikmati senja, dan sofa panjang di ruang tamu untuk tertidur bersama saat menonton film favorit kami. Semua itu bukan sekadar angan-angan, tapi sesuatu yang benar-benar ingin aku wujudkan bersamanya.</p>
+
+<p> Aku meraih tangannya, menggenggamnya erat. "Kita nikah di Bali, dengan konsep privat seperti yang kau mau," lanjutku, suaraku dipenuhi dengan keyakinan yang tak tergoyahkan.</p>
+
+<p>Dia tersenyum lebih lebar, lalu menggenggam tanganku lebih erat, seolah memastikan bahwa aku nyata, bahwa ini bukan sekadar janji kosong. Matanya yang semula masih sembab kini mulai bersinar lagi, seperti ada harapan yang kembali menyala di sana. Aku bisa merasakan kehangatan dari genggamannya, seolah dia ingin memastikan bahwa aku benar-benar ada di sini dan tidak akan pergi kemana-mana lagi.</p>
+
+<p>"Aku percaya sama kamu. Jangan pernah ninggalin aku lagi, ya," katanya dengan suara pelan, namun penuh ketulusan. Aku bisa melihat bagaimana ekspresinya berubah—campuran antara kelegaan, harapan, dan sedikit keraguan yang masih tersisa.</p>
+
+<p> Aku tersenyum, lalu mengangguk mantap. "Nggak akan. Aku janji, aku bakal nikahin kamu, cantik."</p>
+
+<p>Mendengar itu, wajahnya langsung memerah. Dia terkekeh kecil sambil menunduk, berusaha menyembunyikan rona di pipinya. "Rencana itu masih lima atau tujuh tahun lagi, tahu!" katanya, berusaha terdengar santai, tapi aku bisa melihat matanya berbinar penuh kebahagiaan. Gemas sekali melihatnya.</p>
+
+<p> Aku tertawa pelan, lalu mengusap punggung tangannya dengan ibu jariku. "Sekali lagi maaf ya,"</p>
+
+<p>Gadisku, mengerucutkan bibirnya pura-pura berpikir. "Hmmm, kayaknya aku perlu pertimbangan ulang deh,"</p>
+
+<p> Aku menahan tawaku, rasanya aku ingin menggigit pipinya sekarang."Ya udah, gimana kalau aku beliin kamu es krim besok?"</p>
+
+<p>Bola matanya tiba-tiba mengkilap seperti anak kecil. "Boleh! Tapi aku tetap bakal mengingat ini seumur hidupku!"</p>
+
+<p>Aku menggeleng, masih dengan senyum di wajahku. "Terserah kamu. Yang penting, aku nggak kehilangan kamu."</p>
+
+<p>Dia menatapku sejenak, lalu tersenyum. "Kamu nggak akan pernah kehilangan aku."</p>
+
+<p>Ada sesuatu dalam tatapan itu—sesuatu yang tak terucap, namun begitu kuat terasa. Cahaya kecil di matanya, bias harapan yang berpendar lembut, membuat dadaku hangat dengan perasaan yang sulit diungkapkan. Seolah-olah di dalam pikirannya, dia sedang membayangkan hal yang sama denganku—masa depan yang kami bangun perlahan, tapi pasti.</p>
+
+<p>Dan aku tahu, aku akan melakukannya. Tak peduli seberapa lama waktu yang dibutuhkan, aku akan mengupayakan semuanya. Karena dia adalah rumahku, tempat di mana aku selalu ingin kembali, tempat di mana aku merasa benar-benar hidup. Aku beruntung memilikinya. Dia adalah sosok yang mengubah caraku memandang hidup, seseorang yang membuatku percaya bahwa masa depan bukan hanya sekadar waktu yang berjalan, tetapi sesuatu yang bisa kita rancang bersama.</p>
+
+<p>Dalam dirinya, aku menemukan rumah, tempat di mana aku bisa menjadi diriku sendiri tanpa takut dihakimi. Dia mengerti setiap sisi diriku, bahkan yang paling sulit untuk dipahami. Dengan semua ketidaksempurnaanku, dia tetap memilih untuk bertahan, tetap percaya bahwa aku bisa menjadi lebih baik. Aku beruntung memilikinya, bukan hanya karena dia mencintaiku, tapi karena dia membuatku ingin menjadi versi terbaik dari diriku sendiri, untuknya, untuk kami.</p>
+
+<p> Aku tidak akan pergi ke mana pun, bahkan sesulit apa pun rintangan nanti. Aku berjanji, akan menikahimu. Seandainya janji itu tak terlaksana, maka cintaku tak akan pernah bisa sebesar dirimu.</p>
+
+`},
+    { title: "Berlari Membawamu Pada Sukacita Sandyakala", clue: "Tanggal dimana semuanya terbuka, 3 Kata:", password: "16 MEI 2023", 
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong> Rahasia Cinta - Nidji</p>
+
+<p>Sore yang indah membentang di luar jendela ketika aku duduk di ruangan ekskul sinematografi untuk terakhir kalinya. Langit dihiasi paduan jingga dan ungu yang berpadu sempurna, seolah melukis perpisahan yang tenang namun menyisakan kesan mendalam. Udara sore ini terasa hangat, membawa aroma khas senja yang menenangkan, tetapi sebagian besar itu berasal dari sesuatu yang lain—perasaan gelisah yang menggumpal di dadaku.</p>
+
+<p>Di hadapanku, dia berdiri. Gadis yang selama ini menjadi pusat dari duniaku yang sunyi. Cahaya senja yang menyelinap lewat jendela menyorot wajahnya, membuat matanya yang cerah terlihat semakin cemerlang. Aku mengingat kembali bagaimana aku pertama kali jatuh cinta di ruangan ini, 2 tahun lalu, saat kami menjadi anggota baru ekskul sinematografi.</p>
+
+<p>Aku yang pendiam dan kaku, dan dia yang seperti cahaya—ceria, anggun, dan selalu membawa kebahagiaan di mana pun dia berada. Aku tahu, sejak saat itu, aku telah jatuh ke dalam perasaan yang tak pernah bisa kukatakan.</p>
+
+<p>Setiap harinya, aku membatasi kebahagiaanku hanya dengan berada di dekatnya. Aku tak berani berbicara banyak, tak berani menunjukkan perasaan, jadi aku memilih cara lain. Aku menawarkan tumpangan setiap hari, mengantarnya pulang ke rumahnya, membawanya ke mana pun dia mau, meski kadang aku harus berputar jauh dari arah rumahku sendiri. Aku tak peduli. Yang penting, dia bersamaku.</p>
+
+<p>Tetapi, dalam kebersamaan itu, ada banyak kebingungan yang tumbuh. Dia begitu ceria dan baik kepada semua orang. Ada saat-saat aku merasa dia memperlakukanku sedikit berbeda, tetapi di sisi lain, aku juga merasa bahwa aku hanya berharap terlalu tinggi. Bagaimana mungkin gadis secerah dia, bisa menyukai seseorang sepertiku?</p>
+
+<p>Aku memilih diam. Mencintainya dalam sunyi. Membiarkan perasaan ini melahapku dari dalam, menyiksaku perlahan, tetapi aku tak bisa melepaskannya.</p>
+
+<p>Dan hari ini, setelah pengumuman kelulusan, setelah ini semua berakhir, aku menyadari satu hal—hidup tanpanya akan menjadi sesuatu yang amat berat.</p>
+
+<p>Aku mengalihkan pandanganku darinya, menatap kursi-kursi kosong di sekitar ruangan ini, meja tempat kami dulu menyusun storyboard, sudut di mana dia pernah tertawa lepas saat pertama kali belajar mengedit video. Semua kenangan itu seakan menghujaniku sekaligus. Lalu, aku menatapnya kembali. Dia tersenyum, seolah menunggu aku berbicara.</p>
+
+<p> Aku menarik napas dalam.</p>
+
+<p>"Besok… aku tidak akan bisa mengantarmu pulang lagi," kataku, suaraku terdengar lebih berat dari yang kuharapkan.</p>
+
+<p>Dia masih tersenyum, tetapi ada sesuatu di matanya yang berubah. "Aku tahu. Rasanya aneh, ya? Aku sudah terbiasa selalu ada kamu."</p>
+
+<p>Hatiku mencelos. Kalimat itu terasa begitu berarti bagiku, tetapi aku tak berani menafsirkannya lebih jauh. Aku hanya mengangguk pelan.</p>
+
+<p>"Kamu mau pulang sekarang?" tanyaku.</p>
+
+<p>Dia menggeleng. "Tidak. Aku ingin di sini sebentar lagi. Ini tempat di mana kita pertama kali bertemu, kan?"</p>
+
+<p>Aku menelan ludah, dadaku terasa sesak. Aku hanya bisa mengangguk.</p>
+
+<p>"Aku ingat, waktu itu kamu duduk di pojokan, diam saja, sementara aku nggak berhenti bicara," katanya sambil tertawa kecil. "Aku pikir kamu nggak suka sama aku."</p>
+
+<p> Aku menoleh padanya, terkejut. "Kenapa kamu berpikir begitu?"</p>
+
+<p>"Karena kamu selalu diam. Tapi anehnya, kamu selalu ada di dekatku."</p>
+
+<p>Jantungku berdegup keras. Aku mengeratkan genggamanku di lutut, mencoba mengumpulkan keberanian. Ini adalah saat terakhirku untuk mengatakan sesuatu. Jika aku tidak melakukannya sekarang, aku mungkin akan menyesal selamanya.</p>
+
+<p> Aku menarik napas panjang. "Aku… aku memang selalu ingin ada di dekatmu."</p>
+
+<p>Dia menatapku, sedikit bingung.</p>
+
+<p>"Aku nggak tahu gimana cara mengatakannya, tapi aku… aku suka kamu."</p>
+
+<p>Sekali lagi, keheningan menggantung di antara kami. Aku menunduk, tak berani melihat ekspresinya. Hatiku berdegup begitu kencang hingga aku yakin dia bisa mendengarnya.</p>
+
+<p>Lalu, suara lembutnya menghampiri telingaku. "Kenapa baru bilang sekarang?"</p>
+
+<p> Aku menatapnya, terkejut. Matanya yang cemerlang kini terlihat lebih hangat, lebih lembut. "Apa… maksudmu?"</p>
+
+<p>Dia tersenyum kecil. "Aku juga suka kamu."</p>
+
+<p>Jantungku berhenti. Otakku seperti tidak bisa memproses apa yang baru saja kudengar.</p>
+
+<p> Aku menatapnya dalam diam, mencoba memahami bahwa semua rasa sakit yang selama ini kupendam, semua kecemasan dan ketakutanku—semuanya tidak perlu ada.</p>
+
+<p> Aku ingin mengatakan sesuatu. Aku ingin mengekspresikan semua perasaan yang menyesakku selama ini. Tapi yang kulakukan justru sebaliknya.</p>
+
+<p> Aku berdiri dengan cepat, terlalu cepat, hingga kursiku hampir terjatuh ke belakang. Tanpa pikir panjang, aku berbalik dan lari keluar dari ruangan itu, kabur.</p>
+
+<p> Jantungku berdebar kencang, bahkan aku bisa merasakan wajahku memanas. Aku malu walaupun aku sangat sangat bahagia mendengarnya.</p>
+
+<p> Namun detik berikutnya, aku baru sadar betapa bodoh dan memalukan tindakanku ketika aku sudah berlari jauh, hingga mencapai lapangan sekolah. Napasku tersengal, dadaku naik-turun dengan cepat. Aku melirik sekeliling, memastikan tak ada orang lain yang melihat kegugupanku yang begitu kentara. Lalu, aku tersungkur ke atas rerumputan, menutup wajah dengan kedua tangan, menggeram frustrasi.</p>
+
+<p> "Bodoh… bodoh… kenapa aku malah lari?!" aku menggumam keras untuk diriku sendiri.</p>
+
+<p> Rasa malu membakar wajahku. Aku memutar ulang semua yang baru saja terjadi, bagaimana dia mengatakannya—bagaimana dia membalas perasaanku. Seharusnya aku tetap di sana. Seharusnya aku mengatakan sesuatu yang lebih masuk akal, bukannya kabur seperti pengecut.</p>
+
+<p> Aku terbaring di atas rumput, masih menutup wajah, masih bergulat dengan semua emosi yang bercampur aduk. Aku menarik napas panjang, mencoba menenangkan diri.</p>
+
+<p> Perlahan, aku menyingkirkan tangan dari wajah dan menatap langit. Warna jingga dan ungu masih berpadu indah, seolah menatapku kembali dengan senyum penuh pengertian.</p>
+
+<p> Aku tersenyum kecil, meski rasa malu masih bergelayut di benakku. Tapi di balik semua ini, aku tahu satu hal pasti.</p>
+
+<p> Aku bahagia. </p>
+
+`},
+    { title: "Sisa-Sisa yang tak Terbaca", clue: "Tanggal kamu kembali, setelah kamu kabur. 3 Kata:", password: "15 FEBRUARI 2025", 
+    content: ` <p><strong>Karya:</strong> ailavon<br><strong>Lagu Rekomendasi:</strong>NIKI- La La Lost You</p>
+
+<p>Aku terbangun dengan perasaan yang sama seperti hari-hari sebelumnya: hampa.</p>
+
+<p>Di ponselku, tidak ada chat darinya. Tidak ada pesan singkat seperti dulu yang berbunyi, “Pagi, jangan lupa sarapan.” atau “Jangan lupa jaket kalau keluar, dingin.” Sekarang, layarnya kosong. Seperti aku.</p>
+
+<p>Aku menatap langit-langit kamar, membiarkan pikiranku berkelana. Sudah berapa lama dia pergi? Aku berhenti menghitung sejak menyadari bahwa angka-angka itu tidak mengubah apa pun. Seminggu, dua minggu, sebulan… tetap saja dia tidak kembali.</p>
+
+<p>Tapi aku masih menunggu.</p>
+
+<p>Sialnya, aku masih berharap.</p>
+
+<p>Aku mencoba mengabaikan sesaknya dada setiap kali mengingatnya, tapi malam ini terasa lebih buruk dari biasanya. Mungkin karena besok adalah Valentine. Hari yang seharusnya kutunggu-tunggu seperti tahun lalu, tapi kini hanya menyisakan kehampaan.</p>
+
+<p>Valentine tahun lalu, dia menemaniku seharian. Kami tertawa di kafe kecil yang dia pilih, meskipun aku lebih suka tempat lain. Dia membelikanku cokelat, meskipun aku bilang aku tidak terlalu suka yang manis. Lalu dia memberikan sebuah surat. Aku masih mengingat setiap kata yang ditulisnya dengan hati-hati:</p>
+
+<p><em>'Aku nggak tahu apa yang akan terjadi ke depannya. Tapi hari ini, aku ingin bilang kalau aku bersyukur ada kamu. Aku ingin kita terus ada. Lama, mungkin selamanya.'</em></p>
+
+<p>Omong kosong.</p>
+
+<p>Tanganku mengepal di atas selimut. Kalau dia memang ingin aku tetap ada, kenapa dia pergi? Kenapa dia menghilang tanpa kabar, tanpa satu pun penjelasan?</p>
+
+<p>Dada ini terlalu penuh, pikiranku terlalu sesak. Aku tidak bisa terus begini. Aku butuh udara.</p>
+
+<p>Dengan enggan, aku bangkit dari tempat tidur, mengenakan jaket, lalu keluar ke jalanan malam yang sepi.</p>
+
+<p>Udara dingin menusuk kulit, tapi aku tidak peduli. Aku berjalan tanpa tujuan, membiarkan kaki ini melangkah ke mana saja. Setiap langkah terasa berat, seolah ada sesuatu yang tertinggal di belakang—atau mungkin, seseorang.</p>
+
+<p>Sampai akhirnya aku berhenti.</p>
+
+<p>Di depan sebuah kafe kecil yang dipenuhi cahaya hangat dari jendelanya. Tepat di samping pintunya, ada sebuah dinding yang penuh tempelan kertas warna-warni—dinding Valentine. Aku mendekat, membaca beberapa pesan yang tertulis di sana.</p>
+
+<p>'Happy Valentine, sayang! Terima kasih sudah jadi bagian hidupku.'</p>
+
+<p>'Setahun sama kamu, semoga makin banyak tahun-tahun berikutnya!'</p>
+
+<p>'Cinta itu bukan tentang siapa yang lebih dulu datang, tapi siapa yang tetap tinggal.'</p>
+
+<p>Aku tersenyum miris. Lucu, melihat bagaimana orang-orang percaya pada janji-janji itu.</p>
+
+<p>Dinding ini adalah bagian dari event Valentine yang diadakan oleh kafe ini setiap tahun. Semua orang bisa menuliskan kisah cintanya di sticky notes dan menempelkannya di sini—cerita tentang pertemuan, kebahagiaan, harapan. Tidak ada yang menulis tentang kehilangan. Tidak ada yang menulis tentang perasaan yang tak terbalas.</p>
+
+<p>Lalu, entah kenapa, aku mengeluarkan kertas dan pulpen dari tasku. Jemariku gemetar saat mulai menulis.</p>
+
+<p>'Untuk seseorang yang bahkan tidak peduli lagi: Aku masih di sini, masih mikirin kamu, masih nunggu sesuatu yang nggak akan datang. Selamat Valentine, meski bukan darimu.'</p>
+
+<p>Aku menatap tulisan itu lama. Aku tahu ini sia-sia. Dia tidak akan membaca ini. Dia mungkin bahkan tidak ingat lagi kalau besok Valentine. Tapi setidaknya, aku bisa menuliskannya.</p>
+
+<p>Aku menatap kertas di tanganku. Kata-kata yang kutulis barusan masih segar, tinta hitamnya belum benar-benar kering. Tapi apa gunanya? Dia tidak akan membacanya. Dia bahkan tidak peduli.</p>
+
+<p>Tanganku gemetar saat menempelkan kertas itu ke dinding, di antara puluhan pesan lain yang ditulis orang-orang. Ucapan bahagia, janji cinta, harapan-harapan yang terasa ringan. Sedangkan aku? Aku menulis kehilangan. Aku menulis sesuatu yang hanya akan menjadi bagian dari tembok ini, bukan hatinya.</p>
+
+<p>Aku melangkah pergi. Udara malam dingin menampar wajahku, tapi yang lebih menyakitkan adalah bayangan itu—bayangan dia. Aku mencoba mengusirnya, tapi ingatan tentang Valentine tahun lalu terlalu kuat. Hari di mana dia menggenggam tanganku sepanjang jalan, menertawakan hal-hal kecil, menyerahkan sekotak cokelat dan sebuah surat berisi kata-kata manis yang kini terasa seperti kebohongan.</p>
+
+<p>Aku ingin membenci dia. Tuhan tahu, aku ingin. Tapi yang ada hanya rindu yang menyiksa.</p>
+
+<p>Tiba-tiba, langkahku terhenti. Dadaku sesak. Aku tidak bisa. Aku tidak bisa membiarkan kata-kata itu tetap di sana. Aku berbalik, hampir berlari kembali ke dinding tadi.</p>
+
+<p>Begitu menemukannya, aku merobek kertas itu tanpa ragu, meremasnya hingga tak berbentuk lagi. Aku menarik napas dalam-dalam, lalu menulis ulang.</p>
+
+<p>'Kalau aku boleh minta satu hal di hari Valentine ini… Aku cuma mau waktu mundur setahun lalu. Ke saat kamu masih di sini, ke saat aku masih cukup untukmu.'</p>
+
+<p>Kali ini, aku menempelkan kertas itu lebih erat, seolah ingin memastikan kata-kata itu tidak akan hilang begitu saja. Tapi tetap saja, dia tidak akan membacanya.</p>
+
+<p>Aku menatapnya lama, berharap sesuatu berubah. Tapi yang berubah hanyalah perasaanku yang semakin tenggelam dalam kesedihan. Aku menggigit bibir, menahan air mata yang sejak tadi berusaha jatuh.</p>
+
+<p>Lalu aku pergi.</p>
+
+<p>Tapi kali ini, aku tidak berbalik lagi.</p>
+
+`}
+];
+
+let currentStory = -1;
+
+function startStory() {
+    document.getElementById("intro").classList.add("hidden");
+    nextStory();
+}
+
+function nextStory() {
+    currentStory++;
+    if (currentStory < stories.length) {
+        document.getElementById("storyContainer").classList.remove("hidden");
+        document.getElementById("storyTitle").textContent = stories[currentStory].title;
+        document.getElementById("storyContent").textContent = "";
+        document.getElementById("storyClue").textContent = stories[currentStory].clue || "";
+        document.getElementById("passwordInput").value = "";
+        document.getElementById("passwordSection").classList.remove("hidden");
+        document.getElementById("nextButton").classList.add("hidden");
+    } else {
+        document.getElementById("storyContainer").classList.add("hidden");
+        document.getElementById("finalStory").classList.remove("hidden");
+    }
+}
+
+function checkPassword() {
+    const inputPassword = document.getElementById("passwordInput").value.toUpperCase();
+    if (!stories[currentStory].password || inputPassword === stories[currentStory].password) {
+        document.getElementById("storyContent").innerHTML = stories[currentStory].content; 
+        document.getElementById("passwordSection").classList.add("hidden");
+        document.getElementById("nextButton").classList.remove("hidden");
+    } else {
+        alert("Password salah! Coba lagi.");
+    }
+}
+
+function showBirthdayMessage() {
+    document.getElementById("finalStory").classList.add("hidden");
+    document.getElementById("birthdayMessage").classList.remove("hidden");
+}
+
+function goToHome() {
+    location.reload();
+}
+</script>
+
+</body>
+</html>
